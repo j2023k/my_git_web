@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Markdown to XMind</title>
+    <title>Markdown to XMind 工具說明</title>
     <style>
         body {
             margin: 0;
@@ -13,45 +13,220 @@
             color: #333;
             background-color: #f5f5f5;
         }
-
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 30px;
-            background-color: white;
+            background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        h1 {
+        h1, h2, h3 {
             color: #2c3e50;
+        }
+        h1 {
             margin-bottom: 20px;
             padding-bottom: 10px;
             border-bottom: 2px solid #eee;
         }
-
-        .download-section {
-            margin-top: 20px;
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 10px;
         }
-
+        p {
+            margin: 10px 0;
+        }
+        ul {
+            margin: 10px 20px;
+        }
+        .download-section {
+            margin: 30px 0;
+            text-align: center;
+        }
         .download-link {
             color: #3498db;
             text-decoration: none;
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            transition: all 0.3s ease;
         }
-
+        .download-text {
+            font-size: 1.5rem;  /* 更大的字體 */
+            font-weight: bold;
+        }
         .download-link:hover {
-            text-decoration: underline;
+            background-color: #e9ecef;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            text-align: center;
+            color: #888;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .section-divider {
+            margin: 40px 0;
+            text-align: center;
+            position: relative;
+        }
+        .section-divider::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            border-top: 3px solid #3498db;  /* 改用更醒目的顏色和更粗的線條 */
+        }
+        .section-divider span {
+            background: #fff;
+            padding: 0 20px;
+            color: #3498db;    /* 文字顏色改為藍色 */
+            position: relative;
+            font-size: 1.2em;  /* 稍微加大字體 */
+            font-weight: bold; /* 加粗文字 */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        /* 調整次要標題的大小 */
+        h2.secondary-title {
+            font-size: 1.2em;  /* 原本的 h2 大概是 1.5em */
+            margin-top: 20px;  /* 減少上方間距 */
+            margin-bottom: 8px;
+            color: #666;       /* 使用較淺的顏色 */
+        }
+        /* 調整對應的列表樣式 */
+        .secondary-list {
+            font-size: 0.95em;
+            color: #666;
+            margin: 8px 20px;
+        }
+        /* 方案1：醒目的主要標題 */
+        h2.highlight-title {
+            font-size: 1.6em;
+            color: #2c3e50;
+            padding: 10px 0;
+            margin: 20px 0;
+            border-bottom: 3px solid #3498db;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        /* 或方案2：更現代的設計 */
+        h2.highlight-title-modern {
+            font-size: 1.6em;
+            color: #2c3e50;
+            padding: 10px 15px;
+            margin: 20px 0;
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        /* 較小版本的下載按鈕 */
+        .download-link.small {
+            padding: 6px 12px;  /* 更小的內邊距 */
+        }
+        
+        .download-text.small {
+            font-size: 1rem;  /* 更小的字體大小 */
         }
     </style>
 </head>
 <body>
+
+
     <div class="container">
-        <h1>Markdown 格式轉 XMind 工具</h1>
-        <h3>Markdown to XMind Converter</h3>
+
+
+        <h1>Markdown to XMind  </h1>
+        <div class="download-section">
+            <a href="https://github.com/j2023k/md_to_xmind/releases/download/v1.2/markdown_to_xmind_v1.2.zip" class="download-link small">
+                <span class="download-text small">⬇️ Download 下載 v1.2</span>
+            </a>
+        </div>        
+        
+        <h2>簡介</h2>
+        <p>
+            將多組 ai對話或是網頁內容，保留階層結構，貼入 XMind，進行整理、頭腦風暴或團隊協作。
+            <!--這是一個使用 C# 編寫的工具，專為 Windows 平台設計，可將 Markdown 格式（.md）的內容轉換成 XMind 支援的結構化格式。
+            轉換後的內容會自動放入剪貼簿，並跳轉至 XMind 程式，讓你輕鬆將轉換結果貼入 XMind 進行整理、頭腦風暴或團隊協作。 -->
+        </p>
+
+        <h2 class="highlight-title-modern">使用場景--1 ：任意的ai對話窗口 </h2>
+        <ul>
+            <li>
+                一、copy md 資料，通常在ai對話窗口的上方或下方，如下圖：
+                <div class="image-container">
+                    <img src="pic/copy_md_from_chatgpt.png" alt="copy md from chatgpt" style="max-width:200px; display:block; margin: 20px 0;">
+                </div>
+
+            </li>
+
+            <li>
+                二、只需一鍵操作，即可轉換：
+                <div class="image-container">
+                    <img src="pic/app_image.png" alt="app image" style="max-width:200px; display:block; margin: 20px 0;">
+                </div>
+            </li>
+
+            <li>
+                三、在xmind中，直接貼入 (ctrl+v)：
+                <div class="image-container">
+                    <img src="pic/data_in_xmind.png" alt="paste data in xmind" style="max-height:150px; display:block; margin: 20px 0;">
+                
+                    <img src="pic/data_in_xmind__all.png" alt="paste data in xmind" style="max-height:100px; display:block; margin: 20px 0;">
+                
+                </div>
+            </li>
+
+            <li>四、以 XMind 的視覺化呈現，進行整理，頭腦風暴或團隊協作。</li>
+        </ul>
+
+        <h2 class="secondary-title">系統需求</h2>
+        <ul class="secondary-list">
+            <li>Windows 作業系統 </li>
+            <li>已安裝 XMind 程式  </li>
+        </ul>
+
+        <h2 class="secondary-title">安裝：綠色免安裝</h2>
 
         <div class="download-section">
-            <a href="https://github.com/j2023k/md_to_xmind/releases/download/v1.2/markdown_to_xmind_v1.2.zip" class="download-link"> download 下載 v1.2</a>
+            <a href="https://github.com/j2023k/md_to_xmind/releases/download/v1.2/markdown_to_xmind_v1.2.zip" class="download-link small">
+                <span class="download-text small">⬇️ Download 下載 v1.2</span>
+            </a>
         </div>
+
+        <!-- 加入分隔區塊 -->
+        <div class="section-divider">
+            <span>更多使用場景</span>
+        </div>
+
+        
+        <h2 class="highlight-title-modern">使用景場--2 ： notebookLm 或是 任意網頁</h2>
+        <li>
+            一、需配合瀏覽器的插件 <a href="https://chromewebstore.google.com/detail/copy-as-markdown/fkeaekngjflipcockcnpobkpbbfbhmdn" target="_blank">Copy as Markdown</a> 的功能。
+            選擇想要的文字, 按滑鼠右鍵, 選擇 copy selection as markdown 。
+
+            <div class="image-container">
+                <img src="pic/copy_as_markdown.png" alt="paste data in xmind" style="max-height:150px; display:block; margin: 20px 0;">
+               <!-- <img src="pic/data_in_notebooklm_by_copy_as_markdown.png" alt="paste data in xmind" style="max-height:150px; display:block; margin: 20px 0;"> -->
+                <img src="pic/data_in_wiki_by_copy_as_markdown.png" alt="paste data in xmind" style="max-height:100px; display:block; margin: 20px 0;">
+            </div>            
+        </li>
+
+        <li>
+            二、三、同上：
+ 
+
+        </li>
+
     </div>
+
+
 </body>
-</html> 
+</html>

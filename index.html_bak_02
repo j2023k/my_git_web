@@ -1,0 +1,148 @@
+下面是一個擴充後的 help HTML 頁面範例，包含工具介紹、使用場景、安裝與操作說明，以及常見問題說明。你可以根據需求進一步修改內容或樣式。
+
+```html
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown to XMind 工具說明</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: "微軟正黑體", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        ul {
+            margin: 10px 20px;
+        }
+        .download-section {
+            margin-top: 20px;
+        }
+        .download-link {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .download-link:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            text-align: center;
+            color: #888;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Markdown to XMind 工具說明</h1>
+        
+        <h2>工具簡介</h2>
+        <p>
+            這是一個使用 C# 編寫的工具，專為 Windows 平台設計，可將 Markdown 格式（.md）的內容轉換成 XMind 支援的結構化格式。
+            轉換後的內容會自動放入剪貼簿，並跳轉至 XMind 程式，讓你輕鬆將轉換結果貼入 XMind 進行整理、頭腦風暴或團隊協作。
+        </p>
+
+        <h2>使用方式1</h2>
+        <ul>
+            <li>
+                一、當你從 AI 回答中獲得結構化的 Markdown 內容：
+                <div class="image-container">
+                    <img src="pic/copy_md_from_chatgpt.png" alt="copy md from chatgpt" style="max-width:200px; display:block; margin: 20px 0;">
+                </div>
+            </li>
+
+            <li>
+                二、只需一鍵操作，即可轉換：
+                <div class="image-container">
+                    <img src="pic/app_image.png" alt="app image" style="max-width:200px; display:block; margin: 20px 0;">
+                </div>
+            </li>
+
+            <li>
+                三、在xmind中，直接貼入 (ctrl+v)：
+                <div class="image-container">
+                    <img src="pic/data_in_xmind.png" alt="paste data in xmind" style="max-height:150px; display:block; margin: 20px 0;">
+                
+                    <img src="pic/data_in_xmind__all.png" alt="paste data in xmind" style="max-height:100px; display:block; margin: 20px 0;">
+                
+                </div>
+            </li>
+
+            <li>方便將多個 AI 回答內容，在 XMind 中視覺化呈現思維導圖，進行整理，頭腦風暴或團隊協作進行討論。</li>
+        </ul>
+
+        <h2>系統需求</h2>
+        <ul>
+            <li>Windows 作業系統 </li>
+            <li>已安裝 XMind 程式  </li>
+ 
+        </ul>
+
+        <h2>安裝與操作說明</h2>
+        <h3>下載工具</h3>
+        <p>
+            請從下列連結下載最新版工具：
+        </p>
+        <div class="download-section">
+            <a href="https://github.com/j2023k/md_to_xmind/releases/download/v1.2/markdown_to_xmind_v1.2.zip" class="download-link">download 下載 v1.2</a>
+        </div>
+
+        <h3>操作步驟</h3>
+        <ol>
+            <li>解壓縮下載的壓縮檔，並將工具放置在你希望的資料夾中。</li>
+            <li>執行工具程式，將 Markdown 檔案拖放至程式視窗或依照指示操作。</li>
+            <li>工具會自動將 Markdown 內容轉換成 XMind 支援的格式，並將內容複製至剪貼簿。</li>
+            <li>同時，自動開啟 XMind 程式，讓你在指定位置貼上並進行編輯。</li>
+        </ol>
+
+        <h2>常見問題 (FAQ)</h2>
+        <h3>Q1: 為何無法自動啟動 XMind？</h3>
+        <p>A: 請確認已正確安裝 XMind 並設定為預設程式。如問題持續，請檢查工具設定或重新安裝 XMind。</p>
+        
+        <h3>Q2: 剪貼簿中的內容格式錯亂怎麼辦？</h3>
+        <p>A: 請確認 Markdown 格式正確，或手動檢查轉換前的原始文件。如有需要，可聯繫支援人員協助排查。</p>
+
+        <h3>Q3: 工具執行時遇到錯誤訊息，該如何處理？</h3>
+        <p>A: 請嘗試以系統管理員權限執行工具，或確認系統符合相應的需求條件。更多細節請參閱使用手冊。</p>
+
+        <div class="footer">
+            © 2023 Markdown to XMind 團隊
+        </div>
+    </div>
+</body>
+</html>
+```
+
+此頁面除了提供下載連結外，還包含了工具簡介、使用場景、系統需求、安裝與操作步驟以及常見問題，能夠協助使用者快速了解與上手此工具。

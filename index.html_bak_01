@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown to XMind</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: "微軟正黑體", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .download-section {
+            margin-top: 20px;
+        }
+
+        .download-link {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .download-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Markdown 格式轉 XMind 工具</h1>
+        <h3>Markdown to XMind Converter</h3>
+
+        <div class="download-section">
+            <a href="https://github.com/j2023k/md_to_xmind/releases/download/v1.2/markdown_to_xmind_v1.2.zip" class="download-link"> download 下載 v1.2</a>
+        </div>
+    </div>
+</body>
+</html> 
